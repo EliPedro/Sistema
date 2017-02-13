@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    ViewBag.Title = "Escolha";
+}
+
+<div class="container">
+    <h2>Escolha</h2>
+    <hr />
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Selecione
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>@Html.ActionLink("Conta Matriz", "Create", "Aporte")</li>
+            <li>@Html.ActionLink("Conta Filial", "Create", "_Aporte")</li>
+        </ul>
+    </div>
+</div>
+
+
+

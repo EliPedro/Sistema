@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <p>
+           @if(TempData["msg"] != null)
+           {    
+               <p>@TempData["msg"]</p>
+           }
+    </div>
+</div>
+
+
+<p>A opção "Token" é apenas para quando 
+    alguem estiver testando o programa e esquecer o token.
+</p>
+

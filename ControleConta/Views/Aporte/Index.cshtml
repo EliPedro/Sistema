@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ControleConta.Models.Aporte>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<table class="table table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Agencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Valor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Token)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+
+    if (!String.IsNullOrEmpty(item.Token))
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Agencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Valor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Token)
+        </td>
+        <td>
+        </td>
+    </tr>
+    }
+}
+
+</table>

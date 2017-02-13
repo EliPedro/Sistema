@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Escolha";
+}
+
+
+<div class="container">
+    <h2>Escolha</h2>
+    <hr />
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Selecione
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>@Html.ActionLink("Fisica", "Create", "PessoaFisicas")</li>
+            <li>@Html.ActionLink("Juridica", "Create", "PessoaJuridica")</li>    
+          </ul>
+    </div>
+</div>
